@@ -1,0 +1,106 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { Briefcase, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+
+const features = [
+  "Technical skills development",
+  "Language proficiency training",
+  "Cross-cultural communication",
+  "Professional etiquette",
+  "Industry-specific training",
+  "Soft skills enhancement",
+];
+
+const SkillsTraining = () => (
+  <div className="min-h-screen flex flex-col">
+    <Header />
+    <main className="flex-grow bg-white">
+      {/* Hero Section */}
+      <section className="pt-32 pb-12 px-4 md:px-8 bg-gradient-to-r from-ips-blue/10 to-ips-neutral-100">
+        <div className="container mx-auto flex flex-col md:flex-row items-center gap-8">
+          <div className="flex-1 text-center md:text-left">
+            <div className="inline-flex items-center mb-4">
+              <Briefcase className="w-10 h-10 text-ips-blue mr-3" />
+              <span className="text-2xl font-semibold text-ips-blue">
+                Skills Training
+              </span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold text-ips-neutral-900 mb-4">
+              Empowering Talent for Success
+            </h1>
+            <p className="text-lg text-ips-neutral-700 mb-6 max-w-xl">
+              Our skills training programs prepare candidates for international
+              work environments, enhancing their employability and ensuring they
+              meet the requirements of prospective employers.
+            </p>
+            <Link to="/contact">
+              <Button size="lg" className="px-8">
+                Request Training
+              </Button>
+            </Link>
+          </div>
+          <div className="flex-1 flex justify-center md:justify-end">
+            <img
+              src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=600&q=80"
+              alt="Skills Training"
+              className="rounded-xl shadow-elegant w-full max-w-md"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Overview Section */}
+      <section className="py-12 px-4 md:px-8">
+        <div className="container mx-auto max-w-3xl">
+          <div className="bg-ips-blue/5 rounded-lg p-6 mb-8 shadow-card">
+            <h2 className="text-2xl font-semibold text-ips-blue mb-2">
+              Why Invest in Skills Training?
+            </h2>
+            <p className="text-ips-neutral-700">
+              Our training programs are designed to bridge skill gaps, boost
+              confidence, and ensure candidates are ready to excel in their
+              roles from day one.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-ips-neutral-900 mb-4">
+              Key Features
+            </h3>
+            <ul className="space-y-3">
+              {features.map((feature, idx) => (
+                <li key={idx} className="flex items-start">
+                  <ChevronRight className="text-ips-blue mt-1 mr-2" size={20} />
+                  <span className="text-ips-neutral-800">{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-12 px-4 md:px-8 bg-ips-neutral-50">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold text-ips-neutral-900 mb-4">
+            Ready to Upskill?
+          </h2>
+          <p className="text-lg text-ips-neutral-700 mb-8 max-w-2xl mx-auto">
+            Empower your workforce or yourself with our comprehensive training
+            programs. Contact us to learn more and enroll today.
+          </p>
+          <Link to="/contact">
+            <Button size="lg" className="px-8">
+              Contact Us
+            </Button>
+          </Link>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </div>
+);
+
+export default SkillsTraining;

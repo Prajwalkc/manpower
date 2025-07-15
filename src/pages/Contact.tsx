@@ -76,7 +76,7 @@ const ContactPage = () => {
                     "Feel free to call us directly with any questions or inquiries",
                   content: (
                     <a
-                      href="tel:+977981885955"
+                      href="tel:+9779849300184"
                       className="text-ips-blue hover:text-ips-blue-dark font-medium transition-colors"
                     >
                       +977 9849300184
@@ -121,11 +121,11 @@ const ContactPage = () => {
                         <span className="font-medium">9:00 AM - 6:00 PM</span>
                       </li>
                       <li className="flex justify-between">
-                        <span>Saturday:</span>
+                        <span>Sunday:</span>
                         <span className="font-medium">9:00 AM - 2:00 PM</span>
                       </li>
                       <li className="flex justify-between">
-                        <span>Sunday:</span>
+                        <span>Saturday:</span>
                         <span className="font-medium">Closed</span>
                       </li>
                     </ul>

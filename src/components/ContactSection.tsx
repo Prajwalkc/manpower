@@ -27,7 +27,7 @@ const ContactSection = () => {
                       Phone
                     </h3>
                     <a
-                      href="tel:+977981885955"
+                      href="tel:+9779849300184"
                       className="text-ips-neutral-800 hover:text-ips-blue transition-colors"
                     >
                       +977 9849300184
@@ -78,11 +78,11 @@ const ContactSection = () => {
                   <span className="font-medium">9:00 AM - 6:00 PM</span>
                 </li>
                 <li className="flex justify-between">
-                  <span className="text-ips-neutral-800">Saturday</span>
+                  <span className="text-ips-neutral-800">Sunday</span>
                   <span className="font-medium">9:00 AM - 2:00 PM</span>
                 </li>
                 <li className="flex justify-between">
-                  <span className="text-ips-neutral-800">Sunday</span>
+                  <span className="text-ips-neutral-800">Saturday</span>
                   <span className="font-medium">Closed</span>
                 </li>
               </ul>

@@ -68,7 +68,7 @@ const Footer = () => {
                 <div>
                   <p className="text-ips-neutral-200 text-sm">Phone</p>
                   <a
-                    href="tel:+977981885955"
+                    href="tel:+9779849300184"
                     className="text-white hover:text-ips-blue transition-colors duration-300"
                   >
                     +977 9849300184
@@ -111,11 +111,11 @@ const Footer = () => {
                 AM - 6:00 PM
               </li>
               <li className="text-ips-neutral-200">
-                <span className="text-white font-medium">Saturday:</span> 9:00
-                AM - 2:00 PM
+                <span className="text-white font-medium">Sunday:</span> 9:00 AM
+                - 2:00 PM
               </li>
               <li className="text-ips-neutral-200">
-                <span className="text-white font-medium">Sunday:</span> Closed
+                <span className="text-white font-medium">Saturday:</span> Closed
               </li>
             </ul>
           </div>
