@@ -42,7 +42,20 @@ const Header = () => {
   // Close mobile menu when changing routes
   useEffect(() => {
     setMobileMenuOpen(false);
-  }, [location.pathname]);
+    // Prevent body scroll when mobile menu is open
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [location.pathname, mobileMenuOpen]);
+
+  // Cleanup body scroll on unmount
+  useEffect(() => {
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, []);
 
   // Custom styling for navigation links
   const NavItem = ({
@@ -304,6 +317,15 @@ const Header = () => {
                 >
                   <span>Demand</span>
                   <ChevronDown size={16} className="ml-1" />
+                </NavLink>
+              </DropdownMenuItem>
+
+              <DropdownMenuItem asChild>
+                <NavLink
+                  to="/candidates"
+                  className="flex items-center space-x-2 text-lg font-medium py-3 px-4 rounded-md hover:bg-ips-neutral-100"
+                >
+                  Candidates
                 </NavLink>
               </DropdownMenuItem>
 

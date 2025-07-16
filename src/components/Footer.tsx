@@ -50,6 +50,22 @@ const Footer = () => {
               </li>
               <li>
                 <NavLink
+                  to="/candidates"
+                  className="text-ips-neutral-200 hover:text-ips-blue transition-colors duration-300"
+                >
+                  Candidates
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/demand"
+                  className="text-ips-neutral-200 hover:text-ips-blue transition-colors duration-300"
+                >
+                  Demand
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to="/contact"
                   className="text-ips-neutral-200 hover:text-ips-blue transition-colors duration-300"
                 >
